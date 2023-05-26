@@ -32,7 +32,7 @@ The numbers obtained should be printed in a comma-separated sequence on a single
 Hints: 
 Consider use range(#begin, #end) method
 
-Solution:
+<!-- Solution:
 ```python
 l=[]
 for i in range(2000, 3201):
@@ -40,7 +40,7 @@ for i in range(2000, 3201):
         l.append(str(i))
 
 print(','.join(l))
-```
+``` -->
 
 ### Question 2
 Level 1
@@ -56,7 +56,7 @@ Then, the output should be:
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<!-- Solution:
 ```python
 def fact(x):
     if x == 0:
@@ -65,7 +65,7 @@ def fact(x):
 
 x=int(input())
 print(fact(x))
-```
+``` -->
 
 ### Question 3
 Level 1
@@ -81,7 +81,7 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 Consider use dict()
 
-Solution:
+<!-- Solution:
 ```python
 n=int(input())
 d=dict()
@@ -89,7 +89,7 @@ for i in range(1,n+1):
     d[i]=i*i
 
 print(d)
-```
+``` -->
 
 ### Question 4
 Level 1
@@ -106,14 +106,14 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 tuple() method can convert list to tuple
 
-Solution:
+<!-- Solution:
 ```python
 values=input()
 l=values.split(",")
 t=tuple(l)
 print(l)
 print(t)
-```
+``` -->
 
 ### Question 5
 Level 1
@@ -127,7 +127,7 @@ Also please include simple test function to test the class methods.
 Hints:
 Use __init__ method to construct some parameters
 
-Solution:
+<!-- Solution:
 ```python
 class InputOutString(object):
     def __init__(self):
@@ -142,7 +142,7 @@ class InputOutString(object):
 strObj = InputOutString()
 strObj.getString()
 strObj.printString()
-```
+``` -->
 
 ### Question 6
 Level 2
@@ -163,7 +163,7 @@ Hints:
 If the output received is in decimal form, it should be rounded off to its nearest value (for example, if the output received is 26.0, it should be printed as 26)
 In case of input data being supplied to the question, it should be assumed to be a console input. 
 
-Solution:
+<!-- Solution:
 ```python
 import math
 c=50
@@ -174,7 +174,7 @@ for d in items:
     value.append(str(int(round(math.sqrt(2*c*float(d)/h)))))
 
 print(','.join(value))
-```
+``` -->
 
 ### Question 7
 Level 2
@@ -191,7 +191,7 @@ Then, the output of the program should be:
 Hints:
 Note: In case of input data being supplied to the question, it should be assumed to be a console input in a comma-separated form.
 
-Solution:
+<!-- Solution:
 ```python
 input_str = input()
 dimensions=[int(x) for x in input_str.split(',')]
@@ -204,7 +204,7 @@ for row in range(rowNum):
         multilist[row][col]= row*col
 
 print(multilist)
-```
+``` -->
 
 ### Question 8
 Level 2
@@ -219,12 +219,12 @@ bag,hello,without,world
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<!-- Solution:
 ```python
 items=[x for x in input().split(',')]
 items.sort()
 print(','.join(items))
-```
+``` -->
 
 ### Question 9
 Level 2
@@ -241,7 +241,7 @@ PRACTICE MAKES PERFECT
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<!-- Solution:
 ```python
 lines = []
 while True:
@@ -253,7 +253,7 @@ while True:
 
 for sentence in lines:
     print(sentence)
-```
+``` -->
 
 ### Question 10
 Level 2
@@ -269,12 +269,12 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 We use set container to remove duplicated data automatically and then use sorted() to sort the data.
 
-Solution:
+<!-- Solution:
 ```python
 s = input()
 words = [word for word in s.split(" ")]
 print(" ".join(sorted(list(set(words)))))
-```
+``` -->
 
 ### Question 11
 Level 2
@@ -290,7 +290,7 @@ Notes: Assume the data is input by console.
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<!-- Solution:
 ```python
 value = []
 items=[x for x in input().split(',')]
@@ -300,7 +300,7 @@ for p in items:
         value.append(p)
 
 print(','.join(value))
-```
+``` -->
 
 ### Question 12
 Level 2
@@ -312,7 +312,7 @@ The numbers obtained should be printed in a comma-separated sequence on a single
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<!-- Solution:
 ```python
 values = []
 for i in range(1000, 3001):
@@ -320,7 +320,7 @@ for i in range(1000, 3001):
     if (int(s[0])%2==0) and (int(s[1])%2==0) and (int(s[2])%2==0) and (int(s[3])%2==0):
         values.append(s)
 print(",".join(values))
-```
+``` -->
 
 ### Question 13
 Level 2
@@ -336,7 +336,7 @@ DIGITS 3
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<!-- Solution:
 ```python
 s = input()
 d={"DIGITS":0, "LETTERS":0}
@@ -349,7 +349,7 @@ for c in s:
         pass
 print("LETTERS", d["LETTERS"])
 print("DIGITS", d["DIGITS"])
-```
+``` -->
 
 ### Question 14
 Level 2
@@ -365,7 +365,7 @@ LOWER CASE 9
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<!-- Solution:
 ```python
 s = input()
 d={"UPPER CASE":0, "LOWER CASE":0}
@@ -378,7 +378,7 @@ for c in s:
         pass
 print("UPPER CASE", d["UPPER CASE"])
 print("LOWER CASE", d["LOWER CASE"])
-```
+``` -->
 
 ### Question 15
 Level 2
@@ -393,7 +393,7 @@ Then, the output should be:
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<!-- Solution:
 
 ```python
 a = input()
@@ -402,7 +402,7 @@ n2 = int( "%s%s" % (a,a) )
 n3 = int( "%s%s%s" % (a,a,a) )
 n4 = int( "%s%s%s%s" % (a,a,a,a) )
 print(n1+n2+n3+n4)
-```
+``` -->
 
 ### Question 16
 Level 2
@@ -417,13 +417,13 @@ Then, the output should be:
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<!-- Solution:
 
 ```python
 values = input()
 numbers = [x for x in values.split(",") if int(x)%2!=0]
 print(",".join(numbers))
-```
+``` -->
 
 ### Question 17
 Level 2
@@ -487,7 +487,7 @@ ABd1234@1
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solutions:
+<!-- Solutions:
 
 ```python
 import re
@@ -512,7 +512,7 @@ for p in items:
         pass
     value.append(p)
 print(",".join(value))
-```
+``` -->
 
 ### Question 19
 Level 3
